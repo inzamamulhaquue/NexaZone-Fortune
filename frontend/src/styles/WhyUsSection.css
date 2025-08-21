@@ -1,0 +1,116 @@
+.whyus-section {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #2b2b52, #3d3d67); /* modern gradient */
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.whyus-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.whyus-header h2 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #e63946; /* red accent */
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.whyus-header p {
+  font-size: 1.2rem;
+  color: #e5e5e5;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+
+.whyus-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.whyus-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px 25px;
+  border-radius: 15px;
+  min-width: 200px;
+  flex: 1 1 220px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+
+.whyus-box:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.whyus-box h3 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  color: #e63946; /* number in red */
+  font-weight: 800;
+}
+
+.whyus-box p {
+  font-size: 1rem;
+  color: #f1f1f1;
+  line-height: 1.5;
+}
+
+/* Floating shapes background (extra styling) */
+.whyus-section::before,
+.whyus-section::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.whyus-section::before {
+  top: -80px;
+  left: -80px;
+}
+
+.whyus-section::after {
+  bottom: -80px;
+  right: -80px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .whyus-box h3 {
+    font-size: 2rem;
+  }
+  .whyus-header h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .whyus-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .whyus-box {
+    max-width: 350px;
+    width: 100%;
+  }
+}

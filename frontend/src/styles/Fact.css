@@ -1,0 +1,63 @@
+.facts-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: white; /* text visible on image */
+}
+
+.facts-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.facts-left {
+  flex: 1;
+}
+
+.facts-left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: rgb(194, 3, 3); /* highlight heading in red */
+}
+
+.facts-left p {
+  font-size: 1.2rem;
+  color: #ffffff; /* keep left side paragraph white for readability */
+}
+
+.facts-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fact-box {
+  background: rgba(88, 108, 219, 0.6); /* transparent overlay for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.fact-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #250101; /* highlight number in dark red */
+}
+
+.fact-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffffff; /* default text white */
+}
+
+/* Highlight Dubai, Mainland, Freezone in red */
+.fact-box p span.red {
+  color: #6bd30b;
+  font-weight: 700;
+  font-size: 1.2rem; /* slightly larger for emphasis */
+}

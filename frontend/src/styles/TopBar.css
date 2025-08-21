@@ -1,0 +1,113 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background: linear-gradient(90deg, #144385, #0e2a57);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  position: relative;
+}
+
+/* Left: Open Hours */
+.top-bar .left {
+  flex: 1;
+  text-align: left;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+/* Center: Phones + Email */
+.top-bar .center {
+  flex: 2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.top-bar .center a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.top-bar .center a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Right: Social Links */
+.top-bar .right {
+  flex: 1;
+  text-align: right;
+}
+
+.top-bar .right a {
+  margin-left: 14px;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.top-bar .right a:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* ----------------- Responsive ----------------- */
+@media (max-width: 992px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px 20px;
+  }
+
+  .top-bar .left {
+    margin-bottom: 6px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .top-bar .center {
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0;
+  }
+
+  .top-bar .right {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .top-bar .right a {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-bar {
+    font-size: 0.8rem;
+    padding: 10px 15px;
+  }
+
+  .top-bar .center a {
+    font-size: 0.85rem;
+    padding: 4px 8px;
+  }
+
+  .top-bar .right a {
+    font-size: 1rem;
+  }
+}

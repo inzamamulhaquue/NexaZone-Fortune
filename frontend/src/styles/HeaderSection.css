@@ -1,0 +1,134 @@
+/* General Header Styles */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #c9caee;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+   position: relative;
+  z-index: 1000;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Specific color styling */
+.logo .n-letter { color: #000; }        /* Black N */
+.logo .f-letter { color: #28a745; }     /* Green F */
+.logo .nexazone { color: #000; margin-left: 5px; }  /* Black NexaZone */
+.logo .fortune { color: #28a745; margin-left: 5px; font-style: normal; } /* Green Fortune */
+
+.tagline {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-top: 4px;
+  font-weight: 500;
+  margin-left: 100px;
+}
+
+/* Navigation */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 6px 12px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 5px;
+  cursor: pointer !important;
+}
+
+.header-nav a:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.contact-btn {
+  background-color: #28a745;
+  color: white !important;
+}
+
+.contact-btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .header-nav a {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+/* About Us button styled like nav links */
+.about-btn {
+  display: inline-block;
+  background-color: #28a745;      /* default button background */
+  text-decoration: none;
+  color: #fff;                    /* ✅ white text */
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer !important;
+  transition: background 0.3s, color 0.3s;
+}
+
+.about-btn:hover {
+  background-color: #218838;      /* darker green on hover (optional) */
+  color: #fff;                    /* keep white text */
+  border-color: #218838;
+    /* cursor: pointer !important; */
+}

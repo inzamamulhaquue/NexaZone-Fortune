@@ -1,0 +1,160 @@
+/* Section wrapper */
+.about {
+    padding: 48px 16px;
+    background: #c0d5eb;
+    /* subtle light background */
+}
+
+.about-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+.about-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.about-title {
+    margin: 0 0 10px;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    color: #670404;
+}
+
+.about-intro {
+    margin: 0 auto;
+    color: #271c1c;
+    max-width: 900px;
+    line-height: 1.6;
+
+}
+
+/* Features & Benefits cards */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.about-card {
+    background: #7aa5ea;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.about-subtitle {
+    margin: 0 0 10px;
+    font-size: 45px;
+    font-weight: 800;
+    color: #940505;
+    align-items: center;
+    /* margin-left: 200px; */
+}
+
+/* Tick list */
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checklist li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: start;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e5e7eb;
+}
+
+.checklist li:last-child {
+    border-bottom: none;
+}
+
+.tick {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #22c55e;
+    /* green */
+    color: #fff;
+    font-weight: 1100;
+    line-height: 1;
+    font-size: 20px;
+}
+
+/* How it Works */
+.howitworks {
+    margin-top: 50px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.howitworks-intro {
+    color: #000409;
+    margin: 0 0 14px;
+    align-items: center;
+    /* margin-left: 100px; */
+    margin-top: 10px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.step-card {
+    margin-top: 50px;
+    background: #d2d3e3;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    align-items: start;
+}
+
+.step-number {
+    font-weight: 900;
+    font-size: 28px;
+    color: #1e28f2;
+    /* green accent */
+    line-height: 1;
+    margin-top: 2px;
+}
+
+.step-title {
+    margin: 0 0 6px;
+    font-size: 25px;
+    color: #710202;
+}
+
+.step-text {
+    margin: 0;
+    color: #000000;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+}
