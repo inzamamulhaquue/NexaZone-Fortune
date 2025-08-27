@@ -11,6 +11,9 @@ import ContactSection from "./components/ContactSection";
 import ChatAISection from "./components/ChatAiSection";
 
 
+const API_URL = process.env.REACT_APP_API_URL;
+
+
 
 
 function App() {
