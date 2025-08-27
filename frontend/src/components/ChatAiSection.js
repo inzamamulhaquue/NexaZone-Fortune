@@ -69,7 +69,8 @@ const ChatAI = ({ open, onClose }) => {
 
     // Save to backend
     try {
-      await axios.post("http://localhost:5000/api/chat/send", { ...formData, message: text });
+      // await axios.post("http://localhost:5000/api/chat/send", { ...formData, message: text });
+      await axios.post("https://back1-sp50.onrender.com/api/chat/send", { ...formData, message: text });
     } catch (err) {
       console.error(err);
     }
