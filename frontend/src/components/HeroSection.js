@@ -20,7 +20,8 @@ const HeroSection = () => {
     // const [captchaToken, setCaptchaToken] = useState(null); // for CAPTCHA
 
     useEffect(() => {
-        axios.get("http://localhost:5000/api/hero")
+        // axios.get("http://localhost:5000/api/hero")
+        axios.get("https://back1-sp50.onrender.com/api/hero")
             .then(res => setCfg(res.data))
             .catch(err => console.error(err));
     }, []);
@@ -33,7 +34,8 @@ const HeroSection = () => {
         // if (!captchaToken) return alert("Please verify the CAPTCHA.");
         try {
             setSending(true);
-            await axios.post("http://localhost:5000/api/hero/lead", form);
+            // await axios.post("http://localhost:5000/api/hero/lead", form);
+            await axios.post("https://back1-sp50.onrender.com/api/hero/lead", form)
             setSent(true);
             setForm({ name: "", mobile: "", email: "", business: "", location: "", immediately: "", message: "" });
             // setCaptchaToken(null); // reset CAPTCHA
