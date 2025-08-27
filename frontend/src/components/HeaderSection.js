@@ -6,7 +6,8 @@ const HeaderSection = () => {
     const [headerData, setHeaderData] = useState(null);
 
     useEffect(() => {
-        axios.get("http://localhost:5000/api/header")
+        // axios.get("http://localhost:5000/api/header")
+        axios.get("https://back1-sp50.onrender.com/api/header")
             .then(res => setHeaderData(res.data))
             .catch(err => console.error(err));
     }, []);
