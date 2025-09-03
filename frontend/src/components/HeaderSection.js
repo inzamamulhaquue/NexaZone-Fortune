@@ -44,7 +44,7 @@ const HeaderSection = () => {
             <nav className="header-nav">
                 {/* About Us button scrolls down instead of redirect */}
                 <a href="#about" onClick={scrollToContact} className="nav-link about-btn">
-                    {headerData.aboutButtonText || "About Us"}
+                    {headerData.aboutButtonText || "Contact Us"}
                 </a>
 
 
