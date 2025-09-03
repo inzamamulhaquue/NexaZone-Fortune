@@ -9,7 +9,7 @@ const FaqSection = () => {
 
   useEffect(() => {
     // axios.get("http://localhost:5000/api/faqs")
-    axios.get("https://back1-sp50.onrender.com/api/faqs")
+    axios.get("https://nexazone-fortune-backend.onrender.com/api/faqs")
       .then(res => setFaqs(res.data))
       .catch(err => console.error(err));
   }, []);
