@@ -7,7 +7,7 @@ const WhyUsSection = () => {
 
   useEffect(() => {
     // axios.get("http://localhost:5000/api/whyus")
-    axios.get("https://back1-sp50.onrender.com/api/whyus")
+    axios.get("https://nexazone-fortune-backend.onrender.com/api/whyus")
       .then(res => setData(res.data))
       .catch(err => console.error(err));
   }, []);
