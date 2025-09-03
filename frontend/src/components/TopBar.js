@@ -47,17 +47,30 @@ const TopBar = () => {
       </div>
 
     
-      <div className="right">
-        <a href={topBarData.socialLinks.facebook} target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faFacebookF} />
-        </a>
-        <a href={topBarData.socialLinks.instagram} target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faInstagram} />
-        </a>
-        <a href={topBarData.socialLinks.linkedin} target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faLinkedinIn} />
-        </a>
-      </div>
+      // <div className="right">
+      //   <a href={topBarData.socialLinks.facebook} target="_blank" rel="noreferrer">
+      //     <FontAwesomeIcon icon={faFacebookF} />
+      //   </a>
+      //   <a href={topBarData.socialLinks.instagram} target="_blank" rel="noreferrer">
+      //     <FontAwesomeIcon icon={faInstagram} />
+      //   </a>
+      //   <a href={topBarData.socialLinks.linkedin} target="_blank" rel="noreferrer">
+      //     <FontAwesomeIcon icon={faLinkedinIn} />
+      //   </a>
+      // </div>
+
+          <div className="right">
+  <a href={topBarData.socialLinks?.facebook || "#"} target="_blank" rel="noreferrer">
+    <FontAwesomeIcon icon={faFacebookF} />
+  </a>
+  <a href={topBarData.socialLinks?.instagram || "#"} target="_blank" rel="noreferrer">
+    <FontAwesomeIcon icon={faInstagram} />
+  </a>
+  <a href={topBarData.socialLinks?.linkedin || "#"} target="_blank" rel="noreferrer">
+    <FontAwesomeIcon icon={faLinkedinIn} />
+  </a>
+</div>
+
     </div>
   );
 };
