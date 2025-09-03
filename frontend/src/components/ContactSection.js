@@ -10,7 +10,7 @@ const ContactSection = () => {
 
   useEffect(() => {
     // axios.get("http://localhost:5000/api/contact")
-      axios.get("https://back1-sp50.onrender.com/api/contact")
+      axios.get("https://nexazone-fortune-backend.onrender.com/api/contact")
       .then(res => setData(res.data))
       .catch(err => console.error(err));
   }, []);
