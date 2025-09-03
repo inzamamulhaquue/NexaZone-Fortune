@@ -7,8 +7,18 @@ router.get("/", async (req, res) => {
   try {
     let topbar = await TopBar.findOne();
     if (!topbar) {
-      topbar = await TopBar.create({}); // ✅ this works now
+      topbar = await TopBar.create({});
     }
+     // If socialLinks missing, add defaults
+    if (!topbar.socialLinks) {
+      topbar.socialLinks = { facebook: "", instagram: "", linkedin: "" };
+    }
+
+    // If other fields missing, add defaults too
+    if (!topbar.openHours) topbar.openHours = "9am - 6pm";
+    if (!topbar.email) topbar.email = "";
+
+    await topbar.save();
     res.json(topbar);
   } catch (err) {
     res.status(500).json({ error: err.message });
