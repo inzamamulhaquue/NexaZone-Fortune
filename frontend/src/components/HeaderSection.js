@@ -7,7 +7,7 @@ const HeaderSection = () => {
 
     useEffect(() => {
         // axios.get("http://localhost:5000/api/header")
-        axios.get("https://back1-sp50.onrender.com/api/header")
+        axios.get("https://nexazone-fortune-backend.onrender.com/api/header")
             .then(res => setHeaderData(res.data))
             .catch(err => console.error(err));
     }, []);
