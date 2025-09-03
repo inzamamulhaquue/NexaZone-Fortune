@@ -10,7 +10,7 @@ const TopBar = () => {
   // fetch topbar data from backend
   useEffect(() => {
     // fetch("http://localhost:5000/api/topbar")
-      fetch("https://back11-og3w.onrender.com/api/topbar")
+      fetch("https://nexazone-fortune-backend.onrender.com/api/topbar")
       .then(response => response.json())
       .then(data => setTopBarData(data))
       .catch(error => console.error("Error fetching topbar data:", error));
