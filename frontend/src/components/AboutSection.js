@@ -8,7 +8,7 @@ const AboutSection = () => {
 
   useEffect(() => {
     // axios.get("http://localhost:5000/api/about")
-    axios.get("https://back1-sp50.onrender.com/api/about")
+    axios.get("https://nexazone-fortune-backend.onrender.com/api/about")
       .then(res => setData(res.data))
       .catch(err => console.error(err));
   }, []);
